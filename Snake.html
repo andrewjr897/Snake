@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+  <style>
+    .gameStatus {
+      color: red;
+      font-family: courier;
+      font-size: 300%;
+      position: absolute;
+      padding-left: 20px;
+      padding-top: 70px;
+    }
+  </style>
+
+  <head>
+  <meta charset='utf-8'/>
+  <title>HTML Canvas Demo</title>
+  <div>
+    <p id="gameStatus" class="gameStatus" >
+      
+    </p>
+  </div>
+  <canvas id="html-canvas" width="300", height="300" style="border:3px solid #000000;"></canvas>
+  <div>
+    <button id='pauseButton' type="button" onclick="pauseGame();">Pause</button>
+    <button type="button" onclick="resetPressed();">Reset</button>
+    <p id="score">
+      Score: 0
+    </p>
+
+  </div>
+  <script src="Snake.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+
